@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#hourglass {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid white;
+    position: absolute;
+    z-index: 1;
+    left: 10px;
+    top: 220px;
+}
+
+#hourglass1 {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 200px solid white;
+    position: absolute;
+    left: 10px;
+    top: 7px;
+}
+
+#hourglass_cont {
+    width: 0;
+    height: 0;
+    border-left: 110px solid transparent;
+    border-right: 110px solid transparent;
+    border-bottom: 220px solid black;
+    position: absolute;
+    top: 206px;
+}
+
+#hourglass1_cont {
+    width: 0;
+    height: 0;
+    border-left: 110px solid transparent;
+    border-right: 110px solid transparent;
+    border-top: 220px solid black;
+    margin-top: 200px;
+    position: absolute;
+    top: -199px;
+    z-index: -1;
+}
+
+.hourglass {
+    position: relative;
+    width: 220px;
+    height: 427px;
+    -webkit-transition: all ease 2s;
+    transition: all ease 2s;
+    -webkit-transform: rotate(10);
+    -webkit-animation: spin 4s linear infinite;
+    animation: spin 4s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate3d(0, 0, 10, 360deg);
+        transform: rotate3d(0, 0, 10, 360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate3d(0, 0, 10, 360deg);
+        transform: rotate3d(0, 0, 10, 360deg);
+    }
+}
+
+.container2 {
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+
+/*       Page CSS        */
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 5%;
+    position: absolute;
+    width: 100vw;
+    text-align: center;
+    display: none;
+    z-index: 2;
+}
